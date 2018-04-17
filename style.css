@@ -1,3 +1,9 @@
+/* :root and variables */
+
+:root {
+   --b-radius: 5px;
+}
+
 ﻿/* Define custom fonts */
 
 @font-face {
@@ -103,7 +109,7 @@ nav a:hover {
 #banner_image {
     margin-top: 15px;
     height: 200px;
-    border-radius: 5px;
+    border-radius: var(--b-radius);
     background: url('images/sanfrancisco.jpg') no-repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
@@ -111,9 +117,11 @@ nav a:hover {
 }
 
 #banner_description {
+    --b-radius: 0px 0px 5px 5px;
+
     position: absolute;
     bottom: 0;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: var(--b-radius);
     width: 99.5%;
     height: 33px;
     padding-top: 15px;
@@ -133,7 +141,7 @@ nav a:hover {
     bottom: 5px;
     background: url('images/red_background.png') repeat-x;
     border: 1px solid #760001;
-    border-radius: 5px;
+    border-radius: var(--b-radius);
     font-size: 1.2em;
     text-align: center;
     padding: 3px 8px 0px 8px;
@@ -172,7 +180,7 @@ aside {
     width: 235px;
     background-color: #706b64;
     box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 5px;
+    border-radius: var(--b-radius);
     padding: 10px;
     color: white;
     font-size: 0.9em;
